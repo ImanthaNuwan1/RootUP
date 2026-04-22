@@ -16,9 +16,7 @@ This project is a specialized, high-quality online platform designed to establis
 
 
 ## 🛠 Technology Stack
-* **Framework:** Next.js + React.
-* **Styling:** Tailwind CSS (Utility classes only).
-* **Architecture:** Next.js `app/` directory for routing.
+* MERN Stack + TypeScript
 
 ---
 
@@ -101,43 +99,19 @@ The application will automatically reload when changes are made to the source co
 #### 5. Stopping the Server
 To stop the development server, press: `Ctrl + C`
 
-# File Structure
-
+# Scalable Folder Structure
 ```
-my-app/
-├── public/                 # Static assets (images, fonts, etc.)
-├── src/                    # All source code (best practice to keep root clean)
-│   ├── app/                # NEXT.JS APP ROUTER (Routing Layer only)
-│   │   ├── (auth)/         # Route Group: Logical grouping for clean URLs
-│   │   │   ├── login/
-│   │   │   │   └── page.tsx
-│   │   │   └── layout.tsx
-│   │   ├── (dashboard)/
-│   │   │   ├── settings/
-│   │   │   └── page.tsx
-│   │   ├── api/            # API Route Handlers
-│   │   ├── layout.tsx      # Root Layout (Providers live here)
-│   │   └── page.tsx        # Homepage
-│   ├── components/         # SHARED UI COMPONENTS
-│   │   ├── ui/             # Shadcn/Radix-style primitives (Button, Input)
-│   │   ├── forms/          # Reusable form wrappers
-│   │   └── layout/         # Shared Shells (Navbar, Sidebar, Footer)
-│   ├── features/           # FEATURE-DRIVEN MODULES (Domain Logic)
-│   │   ├── user-profile/   # Everything specific to "User Profile"
-│   │   │   ├── components/ # Local components only used in this feature
-│   │   │   ├── hooks/      # Local hooks (e.g., useProfileData)
-│   │   │   ├── services/   # Data fetching/API calls for this feature
-│   │   │   ├── types.ts    # Type definitions for this feature
-│   │   │   └── index.ts    # Public API: Export only what other features need
-│   │   └── billing/        # Another feature module
-│   ├── hooks/              # Global reusable hooks
-│   ├── lib/                # Third-party configurations (Prisma, Stripe, Supabase)
-│   ├── services/           # Global services (Analytics, Logger, Mail)
-│   ├── store/              # State management (Zustand/Redux)
-│   ├── types/              # Global TypeScript types
-│   └── utils/              # Pure helper functions (date formatting, etc.)
-├── .env.local              # Secrets
-├── next.config.ts          # Next.js Config
-└── tsconfig.json           # Path aliases (@/*)
+Scalable folder structure
+
+/src
+  ├── /config       # Database connection & env variables
+  ├── /controllers  # Logic for handling requests
+  ├── /models       # Mongoose schemas & TypeScript interfaces
+  ├── /routes       # API endpoint definitions
+  ├── /middleware   # Auth, error handling, and logging
+  ├── index.ts      # Main entry point
+/.env               # Secrets (Port, Mongo URI)
 ```
 
+
+##
