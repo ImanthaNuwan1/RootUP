@@ -6,6 +6,9 @@ This guide covers everything the team needs to work on the same codebase without
 
 ## Branch Strategy
 
+<img width="1446" height="1040" alt="image" src="https://github.com/user-attachments/assets/bb06544a-f967-42fb-b2c6-703cc2b96018" />
+
+
 We use **3 levels** of branches:
 
 ```
