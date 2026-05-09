@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
+import onboardingRoutes from "./routes/onboardingRoutes.js";
 
 // ============================================================
 // Load Environment Variables FIRST
@@ -50,6 +51,7 @@ app.use(express.json());
 // C# equivalent: app.MapControllers() with route attributes
 // ============================================================
 app.use("/api/auth", authRoutes);
+app.use("/api/onboarding", onboardingRoutes);
 
 // ============================================================
 // Health Check Route
