@@ -23,7 +23,7 @@ const router = Router();
 //
 // Public routes (no token needed):
 router.post("/register", register);  // POST /api/auth/register
-router.post("/login", login);        // POST /api/auth/login
+router.post("/login", login);        // POST /api/auth/login 
 
 // Protected route (token required):
 // "protect" middleware runs FIRST, verifies the token,
